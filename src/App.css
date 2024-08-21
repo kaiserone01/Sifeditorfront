@@ -1,0 +1,89 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.toolbox {
+  width: 15%; /* Reducir el ancho del panel de botones */
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.toolbox-item {
+  margin: 10px;
+  padding: 5px; /* Reducir el padding para hacer los botones más pequeños */
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  cursor: grab;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.toolbox-item:hover {
+  background-color: #d0d0d0;
+}
+
+.editor {
+  position: relative;
+  width: 65%; /* Ajustar el ancho del editor */
+  height: 500px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.properties-panel {
+  width: 20%;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+}
+
+.properties-panel input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+
+}
+
+.action-button {
+  padding: 10px;
+  margin-top: -31px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px; /* Additional style: font size */
+  font-weight: bold; /* Additional style: font weight */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Additional style: box shadow */
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Additional style: box shadow on hover */
+}
+
+.box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: move;
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+}
